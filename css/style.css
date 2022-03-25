@@ -1,0 +1,285 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    }
+
+body{
+        background-color: #eedc3d;
+    }
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 3%;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+p{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.MenuPrincipal{
+    width: 100%;
+    height: 100px;
+    background-color: #5b6b00;
+    display: flex;
+    box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.88);
+}
+
+.MenuPrincipal img{
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+    margin-left: 1%;
+    }
+
+.MenuPrincipal img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.Navegadores{
+    width: 70%;
+    margin-left: 20%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10%;
+    margin-top: 2%;
+    }
+
+li {
+    padding: 2%;
+    border: outset;
+    border-radius: 10px;
+    border-color: #eedc3d;
+    background-color: #ffff92;
+    }
+
+li:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.InfoBanner{
+  background-image: url(../imgs/manaus-teatro-amazonas.jpg);
+  background-size: cover;
+  background-repeat: round;
+  box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+  height: 732px;
+}
+
+.ContainerCards{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ffff92;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 15px 15px;
+    width: 30%;
+    height: 520px;
+  }
+
+.Card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.Background_Comida{
+    background-image: url(../imgs/tambaqui-manaus.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 50%;
+    width: 100%;
+}
+
+.Background_Negócios{
+    background-image: url(../imgs/porto-flutuante-manaus.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 50%;
+    width: 100%;
+}
+
+.Background_História{
+    background-image: url(../imgs/ufam-entrada.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 50%;
+    width: 100%;
+}
+
+.Icon img{
+display: flex;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+.Icon img:hover{
+    position: inherit;
+    transform: scale(1);
+    transition: 1s;
+    animation: Efeito 1s infinite;
+}
+
+.Body{
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    padding: 3%;
+}
+
+.Description{
+    font-size: 0,5rem;
+}
+
+.Vídeo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+ }
+
+iframe{
+    border-radius: 15px;
+}
+
+iframe:hover{
+    transform: scale(1.1);
+    transition: 00.5s;
+}
+
+footer{
+    background-color: #a2a100;
+    padding: 2%;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+.Rodapé{
+display: flex;
+justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Logo{
+    height: 100px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+.Logo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@keyframes Efeito {
+    0%{
+        transform:scale(1);
+        transition: 0s;
+    }
+    50%{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    100%{
+        transform: scale(1);
+        transition: 1s;
+    }
+}
+
+@media (min-width:425px) and (max-width:1280px){
+   
+.MenuPrincipal{
+    width: 100%;
+    background-position: 100%;
+}
+
+.Navegadores{
+    display: flex;
+}
+    
+.MenuPrincipal img{
+    width: 25%;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+li{
+    padding: 5%;
+}
+
+.InfoBanner{
+    background-size: cover;
+    background-repeat: round;
+}
+
+h1{
+    font-size: 2rem;
+    padding: 5%;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.ContainerCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 25px;
+}
+
+.Card{
+    width: 90%;  
+}
+
+iframe{
+    width: 90%;
+    padding: 5%;
+}
+
+}
