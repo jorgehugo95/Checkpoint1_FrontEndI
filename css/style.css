@@ -226,7 +226,7 @@ a{
     }
 }
 
-@media (max-width:450px){
+@media (max-width:500px){
    
 .MenuPrincipal{
     width: 100%;
@@ -235,6 +235,65 @@ a{
     flex-direction: column;
     align-items: center;
     height: 200%;
+}
+
+.Navegadores{
+    display: flex;
+}
+    
+.MenuPrincipal img{
+    width: 25%;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+li{
+    padding: 3%;
+    width: 75%;
+}
+
+.InfoBanner{
+    background-size: cover;
+    background-repeat: round;
+}
+
+h1{
+    font-size: 2rem;
+    padding: 5%;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.ContainerCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 25px;
+}
+
+.Card{
+    width: 90%;  
+}
+
+iframe{
+    width: 90%;
+    padding: 5%;
+}
+
+}
+
+@media (max-width:1300px){
+      
+.MenuPrincipal{
+    width: 100%;
+    background-position: 100%;
 }
 
 .Navegadores{
